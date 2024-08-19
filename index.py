@@ -63,7 +63,7 @@ class MainForm(tk.Tk):
             PAY = 10
             #Window
             self.config(bg=BGC)
-            self.title("Scratch testing form 123")
+            self.title("Scratch testing form ABC")
             #Label Instrucciones
             self.lblInstruction = ttk.Label(self, text="Selecione el archivo al cual desea calcular sus Hashes",background=BGC)
             self.lblInstruction.grid(row=CRO,column=1,padx=PAX, pady=PAY,columnspan=1000)
