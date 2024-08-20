@@ -25,8 +25,4 @@ class FSTDM:
         Info.CurrentPath = str(pathlib.Path().absolute())
         Info.UserPath = str(pathlib.Path.home())
 FSTDM.INIT()
-
 print(FSTDM.Info)
-print("\n\n\n")
-
-runpy.run_path("/home/user/demo.py",globals())
