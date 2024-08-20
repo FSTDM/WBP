@@ -1,9 +1,13 @@
+#python3 -m pip install py-machineid
 import importlib
 import machineid
 import pathlib
 import platform
 import types
+import runpy
+import sys
 import uuid
+
 class dotdict(dict):
     __getattr__ = dict.get
     __setattr__ = dict.__setitem__
@@ -23,4 +27,6 @@ class FSTDM:
 FSTDM.INIT()
 
 print(FSTDM.Info)
+print("\n\n\n")
 
+runpy.run_path("/home/user/demo.py",globals())
