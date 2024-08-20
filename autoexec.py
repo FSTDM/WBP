@@ -1,3 +1,9 @@
+import importlib
+import machineid
+import pathlib
+import platform
+import types
+import uuid
 class dotdict(dict):
     __getattr__ = dict.get
     __setattr__ = dict.__setitem__
