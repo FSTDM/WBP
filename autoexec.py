@@ -16,7 +16,7 @@ class FSTDM:
         Info.OsRelease = platform.release()
         Info.PythonVersion = platform.python_version()
         Info.PythonMagicNumber = int.from_bytes(importlib.util.MAGIC_NUMBER[:2],"little")
-        Info.PathSep = importlib._bootstrap_external.path_separators
+        Info.PathSep = importlib._bootstrap_external.path_separators[0]
         Info.CurrentPath = str(pathlib.Path().absolute())
         Info.UserPath = str(pathlib.Path.home())
 FSTDM.INIT()
