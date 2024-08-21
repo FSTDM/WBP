@@ -1,5 +1,5 @@
 import importlib
-import machineid
+#import machineid
 import pathlib
 import platform
 import uuid
@@ -11,7 +11,7 @@ class FSTDM:
     def INIT():
         FSTDM.Info = dotdict()
         Info = FSTDM.Info
-        Info.MachineId = machineid.id()
+#        Info.MachineId = machineid.id()
         Info.OsName = platform.system()
         Info.OsRelease = platform.release()
         Info.PythonVersion = platform.python_version()
